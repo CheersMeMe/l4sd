@@ -1,0 +1,10 @@
+
+FUNCTIONS OF OPERATING SYSTEM
+===============================
+
+1. Job scheduling
+2. File management
+3. Intermediator
+4. Security
+5. Process management
+6. Memory memory

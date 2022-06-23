@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Navigation styling</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .clr{
+            clear: both;
+        }
+       .container{
+            max-width: 960px;
+            margin: auto;
+        }
+        .navbar{
+            list-style: none;
+            background: #4c6ca0;
+            overflow: auto;
+        }
+        .navbar li{
+            float: right;
+        }
+        .navbar li a{
+            text-decoration: none;
+            display: block;
+            padding: 10px 20px;
+            color: #fff;
+        }
+        .navbar li a:hover{
+            background: #446197;
+            color: #f4f4f4;
+        }
+        .content{
+            background: url("https://images.unsplash.com/photo-1655070249165-d59e1b148401?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80") center center/cover;
+            height: 430px;
+            color: #fff;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .content h2{
+            font-size: 36px;
+        }
+        .content p{
+            font-size: 20px;
+        }
+        .articles{
+            width: 100%;
+            background: #4c6ca0;
+            padding: 10px;
+            /* display: flex; */
+            margin-bottom: 10px;
+            overflow: auto;
+        }
+        .box{
+            width: 32%;
+            height: 200px;
+            background: #f4f4f4;
+            margin-right: 12px;
+            padding: 10px;
+            float: left;
+            border-radius: 10px;
+        }
+        .footer{
+            background: #4c6ca0;
+            text-align: center;
+            padding: 10px 0;
+            color: #fff;
+        }
+        .footer h3{
+            border-bottom: #fff solid 1px;
+            font-size: 24px;
+        }
+        .footer p{
+            font-size: 18px;
+        }
+       
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+        <div class="content">
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, ab.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut praesentium, maiores voluptatum adipisci placeat aspernatur autem doloribus, labore quasi pariatur, soluta facere consectetur temporibus magnam tenetur provident. Doloribus, tenetur nesciunt?</p>
+        </div>
+        <div class="articles">
+            <div class="box box-1">
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci consectetur eaque commodi aliquid natus rerum amet minima temporibus officia sunt?</p>
+            </div>
+            <div class="box box-2">
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci consectetur eaque commodi aliquid natus rerum amet minima temporibus officia sunt?</p>
+            </div>
+            <div class="box box-3">
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci consectetur eaque commodi aliquid natus rerum amet minima temporibus officia sunt?</p>
+            </div>
+        </div>
+        <div class="clr"></div>
+        <div class="footer">
+            <h3> &copy;Lorem ipsum dolor sit amet</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, molestiae!</p>
+        </div>
+    </div>
+    
+</body>
+</html>

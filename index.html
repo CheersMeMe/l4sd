@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS -> Animation</title>
+    <style>
+        #container{
+            background: cyan;
+            width: 400px;
+            height: 400px;
+            position: relative;
+        }
+        #box{
+            height: 50px;
+            width: 50px;
+            background: orange;
+            position: absolute;
+        }
+    </style>
+    <script>
+        // var btn = document.querySelector("#btn");
+        // document.querySelector("button").addEventListener('click', myMove);
+        function myMove(){
+            var box = document.getElementById('box');
+            var pos = 0;
+            var id = setInterval(frame, 10);
+            function frame(){
+                if(pos==350){
+                    clearInterval(id);
+                }else{
+                    pos++;
+                    box.style.top = pos+"px";
+                    box.style.left = pos+"px";
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="container">
+        <p><button id="btn" onclick="myMove()" >Click me</button></p>
+        <div id="box"></div>
+    </div>
+</body>
+</html>

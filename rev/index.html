@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Page Structuring</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .clear{
+            clear: both;
+        }
+        .container{
+            width: 960px;
+            margin: auto;
+            background:#333;
+            color: #fff;
+            padding: 10px;
+            overflow: auto;
+        }
+        .navigation{
+            width: 100%;
+            background: #f4f4f4;
+            color: #333;
+            padding: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .sidebar{
+            width: 30%;
+            float: left;
+            background: #f4f4f4;
+            color: #333;
+            height: 450px;
+            text-align: center;
+        }
+        .content{
+            width: 69%;
+            background: #f4f4f4;
+            color: #333;
+            height: 450px;
+            float: right;
+            text-align: center;
+        }
+        .footer{
+            margin-top: 10px;
+            width: 100%;
+            background:#f4f4f4;
+            color: #333;
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <h2>Navigation</h2>
+        </div>
+        <div class="sidebar">
+            <h2>Sidebar</h2>
+        </div>
+        <div class="content">
+            <h2>Main content</h2>
+        </div>
+        <div class="clear"></div>
+        <div class="footer">
+            <h2>Footer</h2>
+        </div>
+
+    </div>
+</body>
+</html>
